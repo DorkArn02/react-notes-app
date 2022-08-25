@@ -1,13 +1,140 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: 'Roboto';
+    margin: 20px 25px 0 25px;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    gap: 1rem;
+}
+
+header h1 {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Search Bar */
+#searchBar {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #E7E7E7;
+    margin-bottom: 1rem;
+}
+
+#searchBar input {
+    width: 100%;
+    font-family: 'Roboto';
+    background-color: #E7E7E7;
+    border: none;
+    outline: none;
+}
+
+/* Note List */
+
+#note-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+
+/* Note */
+
+.note {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #FFF57F;
+    padding: 0.5rem;
+    border-radius: 10px;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.note textarea {
+    border: none;
+    font-family: 'Roboto';
+    background-color: #96e7de;
+    outline: none;
+    font-size: 1rem;
+    resize: none;
+    height: 100%;
+}
+
+.note-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note-footer div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.note-btn {
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.note-btn:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+/* New Note */
+#note-new {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #96e7de;
+    padding: 0.5rem;
+    border-radius: 10px;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#note-new textarea {
+    border: none;
+    background-color: #96e7de;
+    outline: none;
+    resize: none;
+    font-size: 1rem;
+    height: 100%;
+}
+
+#note-new div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#note-new button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#note-new button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
 }
