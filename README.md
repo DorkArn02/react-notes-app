@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Minimal design notes app in React.js
 
 ![showcase](img.png)
 
